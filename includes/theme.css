@@ -1,0 +1,527 @@
+:root {
+  color-scheme: light;
+  --berry: #a7445d;
+  --berry-dark: #713044;
+  --rose: #d95c7b;
+  --rose-soft: #f8dce3;
+  --cream: #fffaf5;
+  --ink: #49363a;
+  --muted: #876f72;
+  --line: #f0d7dc;
+  --surface: #fff;
+  --shadow: 0 12px 32px rgba(104, 49, 64, .08);
+}
+
+html body {
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(248, 220, 227, .48), transparent 34rem),
+    var(--cream);
+  color: var(--ink);
+  font-family: "Prompt", sans-serif;
+  line-height: 1.6;
+}
+
+html body .top-banner {
+  background: linear-gradient(90deg, var(--berry-dark), var(--berry), #bd5a70);
+  color: #fff9f3;
+  padding: 9px 16px;
+  font-size: 13px;
+  letter-spacing: .15px;
+}
+
+html body header {
+  min-height: 76px;
+  padding: 12px max(24px, calc((100vw - 1200px) / 2));
+  background: rgba(255, 253, 250, .96);
+  border-bottom: 1px solid rgba(216, 177, 182, .42);
+  box-shadow: 0 5px 20px rgba(91, 52, 59, .05);
+}
+
+html body header .brand .logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f8d8dc, #d86b83);
+  box-shadow: 0 7px 16px rgba(167, 68, 93, .17);
+}
+
+html body header .brand .logo::after {
+  content: "🍰";
+  font-size: 22px;
+}
+
+html body header h1,
+html body .page-head h2,
+html body .section-title,
+html body .empty h2,
+html body .chat-head h2 {
+  color: var(--berry);
+}
+
+html body header small,
+html body .page-head p,
+html body .section-subtitle {
+  color: var(--muted);
+}
+
+html body header nav a {
+  padding: 8px 13px;
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 13px;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+html body header nav a:hover,
+html body header nav a.active {
+  background: var(--rose-soft);
+  color: var(--berry-dark);
+}
+
+html body .menu-btn {
+  background: var(--rose-soft);
+  color: var(--berry);
+  box-shadow: none;
+}
+
+html body .container {
+  width: min(1200px, 100%);
+}
+
+html body .hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 0 0 28px 28px;
+  box-shadow: var(--shadow);
+}
+
+html body .hero img {
+  height: clamp(320px, 39vw, 460px);
+  filter: brightness(.91) saturate(.9);
+}
+
+html body .hero::after {
+  background: linear-gradient(90deg, rgba(55, 27, 35, .43), rgba(75, 43, 48, .12) 58%, transparent);
+}
+
+html body .hero-text {
+  left: max(5%, calc((100% - 1200px) / 2));
+  width: min(560px, 88%);
+  padding: clamp(22px, 4vw, 38px);
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 24px;
+  background: rgba(255, 250, 245, .91);
+  box-shadow: 0 18px 48px rgba(48, 28, 32, .16);
+  backdrop-filter: blur(12px);
+}
+
+html body .hero-text h1 {
+  color: var(--berry-dark);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+html body .hero-text p {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+html body .hero-actions .btn-primary,
+html body .filter-btn,
+html body .add-cart-btn,
+html body .btn-primary,
+html body .btn-paid,
+html body .btn-primary,
+html body .btn {
+  background: linear-gradient(105deg, var(--berry), var(--rose));
+  box-shadow: 0 8px 18px rgba(167, 68, 93, .18);
+}
+
+html body .hero-actions .btn-ghost {
+  border-color: var(--line);
+  background: var(--surface);
+  color: var(--berry-dark);
+}
+
+html body .promo-card,
+html body .item,
+html body .card,
+html body .form-card,
+html body .pay-box,
+html body .pay-option,
+html body .chat-head,
+html body .chat-box,
+html body .review-card,
+html body .reviews,
+html body .summary,
+html body .qr-box {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .94);
+  box-shadow: var(--shadow);
+}
+
+html body .promo-card,
+html body .item,
+html body .card,
+html body .form-card,
+html body .chat-head,
+html body .chat-box,
+html body .review-card,
+html body .reviews {
+  border-radius: 20px;
+}
+
+html body .promo-title,
+html body .promo-big,
+html body .item h3,
+html body .modal-title,
+html body .reviews-head h2,
+html body .contact-footer h2 {
+  color: var(--berry-dark);
+}
+
+html body .section-title,
+html body .page-head h2 {
+  font-size: clamp(25px, 3vw, 32px);
+}
+
+html body .item.recommended {
+  border-color: #e8bac5;
+  background: linear-gradient(180deg, #fff, #fff8f5);
+}
+
+html body .item img {
+  border-radius: 15px;
+  background: #faecec;
+}
+
+html body .badge,
+html body .badge.recommend,
+html body .badge.new,
+html body .badge.hot,
+html body .item .badge {
+  background: var(--berry);
+}
+
+html body .price,
+html body .modal-price,
+html body .total-box {
+  color: var(--berry);
+}
+
+html body .chip,
+html body .badge,
+html body .category-pills a,
+html body .category-pills a.active {
+  border-color: var(--line);
+}
+
+html body .chip {
+  background: #fff8f5;
+  color: var(--muted);
+}
+
+html body .category-pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 8px;
+}
+
+html body .category-pills a {
+  width: auto;
+  min-width: 0;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--berry-dark);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background .18s ease, transform .18s ease;
+}
+
+html body .category-pills a:hover,
+html body .category-pills a.active {
+  background: var(--rose-soft);
+  border-color: #e7bac5;
+  color: var(--berry-dark);
+  transform: translateY(-1px);
+}
+
+html body .container .header h1 {
+  color: var(--berry);
+}
+
+html body .search-input,
+html body .cat-select,
+html body .qty-input,
+html body .file-input,
+html body input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+html body select,
+html body textarea {
+  border-color: #e8d2d5;
+  border-radius: 12px;
+  background-color: #fffdfb;
+  color: var(--ink);
+  box-shadow: none;
+}
+
+html body .search-input:focus,
+html body .cat-select:focus,
+html body input:focus,
+html body select:focus,
+html body textarea:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(217, 92, 123, .13);
+}
+
+html body .filter-btn,
+html body .add-cart-btn,
+html body .btn-primary,
+html body .btn-paid,
+html body .btn-confirm,
+html body .back,
+html body .btn-primary {
+  border-radius: 12px;
+  color: #fff;
+}
+
+html body .btn-confirm,
+html body .btn-dark,
+html body .back:not(.btn-primary) {
+  background: var(--berry-dark);
+  box-shadow: 0 8px 18px rgba(113, 48, 68, .16);
+}
+
+html body .filter-bar {
+  grid-template-columns: minmax(0, 1fr) 220px 130px;
+}
+
+html body .cart-row {
+  gap: 8px;
+}
+
+html body .qty-input {
+  border-radius: 10px;
+}
+
+html body .divider,
+html body .row {
+  border-color: var(--line);
+}
+
+html body .table-wrap {
+  border-color: var(--line);
+  border-radius: 14px;
+}
+
+html body table {
+  border-color: var(--line);
+}
+
+html body th {
+  background: #f8e6e8;
+  color: var(--berry-dark);
+}
+
+html body td,
+html body th {
+  border-bottom-color: #f3e5e6;
+}
+
+html body .total-box,
+html body .pay-box,
+html body .qr-box,
+html body .summary {
+  border-radius: 15px;
+  background: #fff8f5;
+  border-color: var(--line);
+}
+
+html body .pay-title,
+html body .qr-box h3,
+html body .title {
+  color: var(--berry);
+}
+
+html body .pay-option:hover {
+  border-color: #dda9b6;
+  box-shadow: 0 8px 18px rgba(104, 49, 64, .08);
+}
+
+html body .pay-option input {
+  accent-color: var(--berry);
+}
+
+html body .checkout-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+}
+
+html body .checkout-steps li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+html body .checkout-steps li span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  border-radius: 50%;
+  background: #f3e6e7;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+html body .checkout-steps li.complete,
+html body .checkout-steps li.current {
+  border-color: #e5b9c3;
+  background: #fff5f4;
+  color: var(--berry-dark);
+}
+
+html body .checkout-steps li.complete span,
+html body .checkout-steps li.current span {
+  background: var(--berry);
+  color: #fff;
+}
+
+html body .wrap .card {
+  border-radius: 22px;
+  box-shadow: 0 16px 42px rgba(104, 49, 64, .1);
+}
+
+html body .wrap .logo {
+  background: linear-gradient(145deg, #f5d6da, #d86b83);
+  box-shadow: 0 10px 24px rgba(167, 68, 93, .16);
+}
+
+html body .field label,
+html body label,
+html body .row span:first-child {
+  color: var(--berry-dark);
+}
+
+html body .bottom a,
+html body .review-name {
+  color: var(--berry);
+}
+
+html body .chat-box {
+  background-color: #fffdfb;
+}
+
+html body .msg.customer .bubble {
+  background: linear-gradient(105deg, var(--berry), var(--rose));
+}
+
+html body .msg.admin .bubble {
+  background: #fff4f1;
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+html body .contact-footer {
+  margin-top: 54px;
+  border-top: 1px solid var(--line);
+  background: #f8e6e5;
+}
+
+html body .reviews {
+  padding: 36px;
+  box-shadow: none;
+}
+
+html body .reviews::before {
+  background: radial-gradient(circle at 20% 30%, rgba(217, 92, 123, .1), transparent 55%);
+}
+
+@media (max-width: 900px) {
+  html body header {
+    padding: 12px 16px;
+  }
+
+  html body header nav.show {
+    border-color: var(--line);
+    background: #fffdfa;
+  }
+}
+
+@media (max-width: 720px) {
+  html body .hero {
+    border-radius: 0 0 20px 20px;
+  }
+
+  html body .hero img {
+    height: 360px;
+  }
+
+  html body .hero-text {
+    left: 50%;
+    width: calc(100% - 32px);
+    transform: translate(-50%, -50%);
+  }
+
+  html body .hero-text h1 {
+    font-size: 30px;
+  }
+
+  html body .filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  html body .category-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  html body .category-pills a {
+    flex: 0 0 auto;
+  }
+
+  html body .checkout-steps {
+    gap: 6px;
+  }
+
+  html body .checkout-steps li {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 4px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  html body .reviews {
+    padding: 24px 16px;
+  }
+}

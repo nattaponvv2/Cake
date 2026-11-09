@@ -183,3 +183,4 @@ nav a.active{
   }
 }
 </style>
+<link rel="stylesheet" href="includes/theme.css">

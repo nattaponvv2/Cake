@@ -191,7 +191,7 @@ nav a.active{
   <div class="brand">
     <div class="logo"></div>
     <div>
-      <h1>🍰 ร้านอบอุ่นเบเกอรี่</h1>
+      <h1>ร้านอบอุ่นเบเกอรี่</h1>
       <small>Warm Bakery • Fresh Everyday</small>
     </div>
   </div>

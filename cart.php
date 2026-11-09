@@ -340,6 +340,12 @@ button{
         <a class="back" href="shop.php">← กลับไปหน้าร้าน</a>
     </div>
 
+    <ol class="checkout-steps" aria-label="ขั้นตอนสั่งซื้อ">
+        <li class="current"><span>1</span> ตะกร้าสินค้า</li>
+        <li><span>2</span> ชำระเงิน</li>
+        <li><span>3</span> ยืนยันคำสั่งซื้อ</li>
+    </ol>
+
     <?php if (empty($_SESSION['cart'])): ?>
 
         <div class="card empty">

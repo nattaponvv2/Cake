@@ -372,6 +372,16 @@ html, body{
     <button class="filter-btn" type="submit">ค้นหา</button>
   </form>
 
+  <nav class="category-pills" aria-label="เลือกหมวดหมู่สินค้า">
+    <a class="<?= $cat_id === 0 ? 'active' : '' ?>" href="products.php<?= $keyword !== '' ? '?search=' . rawurlencode($keyword) : '' ?>">ทั้งหมด</a>
+    <?php foreach($categories as $c): ?>
+      <a class="<?= $cat_id === (int)$c['id'] ? 'active' : '' ?>"
+         href="products.php?cat=<?= (int)$c['id'] ?><?= $keyword !== '' ? '&amp;search=' . rawurlencode($keyword) : '' ?>">
+        <?= htmlspecialchars($c['name']) ?>
+      </a>
+    <?php endforeach; ?>
+  </nav>
+
   <!-- ===== Products ===== -->
   <div class="products">
     <?php if(count($products) == 0): ?>
