@@ -40,7 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="UTF-8">
 <title>เข้าสู่ระบบผู้ดูแล | ร้านอบอุ่นเบเกอรี่</title>
-<link rel="stylesheet" href="includes/theme.css">
 <style>
     body {
         font-family: "Prompt", Tahoma, sans-serif;

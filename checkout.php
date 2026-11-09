@@ -103,8 +103,6 @@ unset($_SESSION['cart']);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>สั่งซื้อสำเร็จ</title>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="includes/theme.css">
 
 
 <style>
@@ -401,7 +399,7 @@ nav a:hover{
   <div class="brand">
     <div class="logo"></div>
     <div>
-      <h1>ร้านอบอุ่นเบเกอรี่</h1>
+      <h1>🍰 ร้านอบอุ่นเบเกอรี่</h1>
       <small>Warm Bakery • Fresh Everyday</small>
     </div>
   </div>
@@ -431,11 +429,6 @@ nav a:hover{
 </header>
 
 <div class="container">
-  <ol class="checkout-steps" aria-label="สถานะคำสั่งซื้อ">
-    <li class="complete"><span>1</span> ตะกร้าสินค้า</li>
-    <li class="complete"><span>2</span> ชำระเงิน</li>
-    <li class="current"><span>3</span> ยืนยันคำสั่งซื้อ</li>
-  </ol>
   <div class="card">
 
     <div class="badge">✓</div>
