@@ -73,8 +73,7 @@ body {
   border-bottom-right-radius: 38px;
 }
 
-.hero video {
-  display: block;
+.hero img {
   width: 100%;
   height: 480px;
   object-fit: cover;
@@ -695,7 +694,7 @@ body {
     font-size: 13px;
   }
 
-  .hero video{
+  .hero img{
     height: 320px;
   }
 
@@ -735,9 +734,7 @@ body {
 <?php include "includes/header.php"; ?>
 
 <section class="hero">
-  <video autoplay muted loop playsinline preload="metadata" aria-label="วิดีโอแนะนำร้านเบเกอรี่">
-    <source src="kling_20261109_VIDEO_Slow_motio_5901_0.mp4" type="video/mp4">
-  </video>
+  <img src="uploads/vvv.png" alt="">
   <div class="hero-text">
     <h1>สินค้าใหม่มาแล้ว 🎉</h1>
     <p>เลือกขนมที่คุณชอบ แล้วเพิ่มลงตะกร้าได้เลย 💗</p>
